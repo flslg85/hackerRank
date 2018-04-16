@@ -1,9 +1,9 @@
-package com.company.hackerRank;
+package com.company.hackerRank.warmup;
 
 /**
  * https://www.hackerrank.com/challenges/compare-the-triplets/problem
  */
-public class CompareTheTriplets {
+public class P2_CompareTheTriplets {
     public static void main(String[] args) {
         solve(5, 6, 7, 3, 6, 10);
     }

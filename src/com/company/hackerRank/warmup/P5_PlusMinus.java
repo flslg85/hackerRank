@@ -1,11 +1,11 @@
-package com.company.hackerRank;
+package com.company.hackerRank.warmup;
 
 import java.util.Arrays;
 
 /**
  * https://www.hackerrank.com/challenges/plus-minus/problem
  */
-public class PlusMinus {
+public class P5_PlusMinus {
     public static void main(String[] args) {
         int[] arr = {-4, 3, -9, 0, 4, 1};
         plusMinus(arr);

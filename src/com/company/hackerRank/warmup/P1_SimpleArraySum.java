@@ -1,11 +1,11 @@
-package com.company.hackerRank;
+package com.company.hackerRank.warmup;
 
 import java.util.Arrays;
 
 /**
  * https://www.hackerrank.com/challenges/simple-array-sum/problem
  */
-public class SimpleArraySum {
+public class P1_SimpleArraySum {
     public static void main(String[] args) {
         int ar[] = {1, 2, 3, 4, 10, 11};
         simpleArraySum(ar);

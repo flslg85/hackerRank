@@ -1,9 +1,9 @@
-package com.company.hackerRank;
+package com.company.hackerRank.warmup;
 
 /**
  * https://www.hackerrank.com/challenges/staircase/problem
  */
-public class Staircase {
+public class P6_Staircase {
     public static void main(String[] args) {
         staircase(4);
     }

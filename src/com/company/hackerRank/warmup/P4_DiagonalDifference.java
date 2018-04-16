@@ -1,11 +1,11 @@
-package com.company.hackerRank;
+package com.company.hackerRank.warmup;
 
 import java.util.Arrays;
 
 /**
  * https://www.hackerrank.com/challenges/diagonal-difference/problem
  */
-public class DiagonalDifference {
+public class P4_DiagonalDifference {
     public static void main(String[] args) {
         int[][] a = {
                 {11, 2, 4},
