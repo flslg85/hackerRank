@@ -1,4 +1,4 @@
-package com.company.hackerRank.warmup;
+package com.hackerRank.warmup;
 
 /**
  * https://www.hackerrank.com/challenges/staircase/problem

@@ -1,4 +1,4 @@
-package com.company.hackerRank.warmup;
+package com.hackerRank.warmup;
 
 import java.util.Objects;
 import java.util.regex.Matcher;

@@ -1,4 +1,4 @@
-package com.company.hackerRank.warmup;
+package com.hackerRank.warmup;
 
 import java.util.Arrays;
 import java.util.Comparator;
