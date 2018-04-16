@@ -1,5 +1,9 @@
 package com.hackerRank.warmup;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -21,31 +25,34 @@ public class P9_TimeConversion {
         /*
          * Write your code here.
          */
-        Pattern p = Pattern.compile("([0-9]+):([0-9]+):([0-9]+)(AM|PM)");
-        Matcher m = p.matcher(s);
-        StringBuffer sb = new StringBuffer();
-        if (m.find()) {
-            String hour = m.group(1);
-            String min = m.group(2);
-            String sec = m.group(3);
-            String amPm = m.group(4);
+        LocalTime localTime = LocalTime.parse(s, DateTimeFormatter.ofPattern("hh:mm:ssa"));
+        return localTime.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
 
-            if (hour.equals("12") && amPm.equals("AM"))
-                sb.append("00");
-            else if (hour.equals("12") && amPm.equals("PM"))
-                sb.append("12");
-            else if (amPm.equals("PM"))
-                sb.append(String.format("%02d", (Integer.valueOf(hour) + 12) % 24));
-            else
-                sb.append(String.format("%02d", Integer.valueOf(hour) % 24));
-
-            sb.append(':');
-            sb.append(min);
-            sb.append(':');
-            sb.append(sec);
-        }
-
-        return sb.toString();
+//        Pattern p = Pattern.compile("([0-9]+):([0-9]+):([0-9]+)(AM|PM)");
+//        Matcher m = p.matcher(s);
+//        StringBuffer sb = new StringBuffer();
+//        if (m.find()) {
+//            String hour = m.group(1);
+//            String min = m.group(2);
+//            String sec = m.group(3);
+//            String amPm = m.group(4);
+//
+//            if (hour.equals("12") && amPm.equals("AM"))
+//                sb.append("00");
+//            else if (hour.equals("12") && amPm.equals("PM"))
+//                sb.append("12");
+//            else if (amPm.equals("PM"))
+//                sb.append(String.format("%02d", (Integer.valueOf(hour) + 12) % 24));
+//            else
+//                sb.append(String.format("%02d", Integer.valueOf(hour) % 24));
+//
+//            sb.append(':');
+//            sb.append(min);
+//            sb.append(':');
+//            sb.append(sec);
+//        }
+//
+//        return sb.toString();
     }
 
 }
